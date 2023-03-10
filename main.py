@@ -1,7 +1,10 @@
 import sys
 import os
+from googletrans import Translator
+import googletrans
+import speech_recognition as sr
 from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtWidgets import QInputDialog
+from PyQt5.QtWidgets import QInputDialog, QMessageBox
 from design import Ui_MainWindow
 
 class Main(QtWidgets.QMainWindow):
@@ -9,11 +12,32 @@ class Main(QtWidgets.QMainWindow):
         super(Main, self).__init__(parent=parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.btn_active = False
+        self.addLanguange()
         self.ui.translat_button.clicked.connect(self.translate)
+
+    def addLanguange(self):
+        self.ui.outLan.addItems(googletrans.LANGUAGES.values())
     
     def translate(self):
-        print("hello")
+        try:
+            inputText = self.ui.input_text.toPlainText()
+            print(inputText)
+            lang_out = self.ui.outLan.currentText()
+            print(lang_out)
+            translator = Translator()
+            translate = translator.translate(inputText, dest=f'{lang_out}')
+            print(translate)
+            self.ui.output_text.setText(translate.text)
+        except Exception as e:
+            self.errorMessage(e)
+
+    def errorMessage(self, message):
+        print(message)
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Critical)
+        msg.setWindowTitle('Error!!')
+        msg.setText(str(message))
+        msg.exec_()
 
     def speechToText(self):
         r = sr.Recognizer()

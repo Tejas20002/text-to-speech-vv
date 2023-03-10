@@ -42,8 +42,8 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>220</y>
+      <x>350</x>
+      <y>230</y>
       <width>160</width>
       <height>80</height>
      </rect>
@@ -72,47 +72,6 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>220</y>
-      <width>160</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QComboBox" name="inLan">
-       <item>
-        <property name="text">
-         <string>English</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Gujarat</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Hindi</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>German</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Spanish</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
@@ -124,33 +83,7 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QComboBox" name="outLan">
-       <item>
-        <property name="text">
-         <string>English</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Gujarat</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Hindi</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>German</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Spanish</string>
-        </property>
-       </item>
-      </widget>
+      <widget class="QComboBox" name="outLan"/>
      </item>
     </layout>
    </widget>
