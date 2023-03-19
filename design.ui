@@ -7,43 +7,21 @@
     <x>0</x>
     <y>0</y>
     <width>886</width>
-    <height>355</height>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(85, 87, 83);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>871</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QTextEdit" name="input_text"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="translat_button">
-       <property name="text">
-        <string>Translate</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QTextEdit" name="output_text"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>230</y>
+      <y>240</y>
       <width>160</width>
       <height>80</height>
      </rect>
@@ -51,6 +29,9 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QPushButton" name="speechtotext">
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+       </property>
        <property name="text">
         <string>Speech to Text</string>
        </property>
@@ -58,6 +39,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="texttospeech">
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+       </property>
        <property name="text">
         <string>Text to Speech</string>
        </property>
@@ -65,6 +49,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="email">
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+       </property>
        <property name="text">
         <string>Send to Email</string>
        </property>
@@ -75,17 +62,121 @@
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>220</y>
-      <width>160</width>
+      <x>620</x>
+      <y>240</y>
+      <width>171</width>
       <height>31</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QComboBox" name="outLan"/>
+      <widget class="QComboBox" name="outLan">
+       <property name="styleSheet">
+        <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+       </property>
+      </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QTextEdit" name="input_text">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>391</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="translat_button">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>110</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Translate</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="output_text">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>361</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 12pt &quot;Inter&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="output_text_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>150</y>
+      <width>361</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 16pt &quot;Inter&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Input for translate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 14pt &quot;Inter&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Output of Translate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>120</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 63 italic 14pt &quot;Inter&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Pronunciation of Output</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
