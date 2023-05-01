@@ -88,7 +88,7 @@ class Main(QtWidgets.QMainWindow):
             outText = self.ui.output_text.toPlainText()
             self.SpeakText(inText)
             self.SpeakText(outText)
-            self.SpeakText(self.outText)
+            # self.SpeakText(self.outText)
 
     def toSendmail(self):
         inText = self.ui.input_text.toPlainText()
